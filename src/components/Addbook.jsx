@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Addbook = () => {
+const Addbook = () => (
   <form>
     <input type="text" name="title" />
     <input type="text" name="author" />
     <button type="submit">Add Book</button>
-  </form>;
-};
+  </form>
+);
 
 export default Addbook;
