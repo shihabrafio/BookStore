@@ -1,19 +1,19 @@
-const check_catergory = "bookstore/categories/check_catergory";
+const checkcategory = 'bookstore/categories/checkcategory';
 
 const initialcategories = {
   category: [],
 };
 
-//Create Reducer
+// Create Reducer
 export const checkCategory = () => ({
-  type: check_catergory,
+  type: checkcategory,
 });
 
-//Add Reducer
+// Add Reducer
 export const categoryReducer = (state = initialcategories, action) => {
   switch (action.type) {
-    case "check_catergory":
-      return "Under construction";
+    case 'checkcategory':
+      return 'Under construction';
     default:
       return state;
   }

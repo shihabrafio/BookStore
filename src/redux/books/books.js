@@ -1,5 +1,5 @@
-const addbook = "bookStore/books/addbook";
-const removebook = "bookStore/books/removebook";
+const addbook = 'bookStore/books/addbook';
+const removebook = 'bookStore/books/removebook';
 
 const initialbooks = {
   books: [],
@@ -9,7 +9,7 @@ const initialbooks = {
 export const addBooks = () => ({
   type: addbook,
   id: 1,
-  title: "Harry Potter",
+  title: 'Harry Potter',
 });
 
 export const removeBooks = (id) => ({
@@ -20,7 +20,7 @@ export const removeBooks = (id) => ({
 // Add Reducer
 export const bookReducer = (state = initialbooks, action) => {
   switch (action.type) {
-    case "addbook":
+    case 'addbook':
       return [
         ...state,
         {
@@ -28,7 +28,7 @@ export const bookReducer = (state = initialbooks, action) => {
           title: action.title,
         },
       ];
-    case "removebook":
+    case 'removebook':
       return state.filter((book) => book.id !== action.id);
     default:
       return state;
