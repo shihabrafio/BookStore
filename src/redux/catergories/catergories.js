@@ -1,20 +1,17 @@
-const checkcategory = 'bookstore/categories/checkcategory';
+import { createSlice } from '@reduxjs/toolkit';
 
-const initialcategories = {
-  category: [],
-};
-
-// Create Reducer
-export const checkCategory = () => ({
-  type: checkcategory,
+const categorySlice = createSlice({
+  name: 'category',
+  initialState: {
+    category: [],
+  },
+  reducers: {
+    checkCategory: (state) => ({
+      ...state,
+      category: 'Under construction',
+    }),
+  },
 });
 
-// Add Reducer
-export const categoryReducer = (state = initialcategories, action) => {
-  switch (action.type) {
-    case 'checkcategory':
-      return 'Under construction';
-    default:
-      return state;
-  }
-};
+export const { checkCategory } = categorySlice.actions;
+export const categoryReducer = categorySlice.reducer;
