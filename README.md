@@ -1,11 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <br/>
-
   <h3><b>Bookstore</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -39,6 +36,12 @@
 
 ## 🛠 Built With <a name="built-with">React</a>
 
+- HTML
+- CSS
+- JAVASCRIPT
+- REACT
+- REDUX
+
 ### Tech Stack <a name="tech-stack"></a>
 
 
@@ -60,12 +63,6 @@
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](Not yet deployed)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
