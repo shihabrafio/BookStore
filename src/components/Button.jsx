@@ -6,9 +6,4 @@ const Button = ({ onClick, className, children }) => (
   </button>
 );
 
-Button.defaultProps = {
-  className: '',
-  onClick: () => {},
-};
-
 export default Button;
