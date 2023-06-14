@@ -7,7 +7,7 @@ const Books = () => {
   const books = useSelector((store) => store.books.books);
 
   const saveBooksToLocalStorage = (items) => {
-    localStorage.setItem('booksdata', JSON.stringify(items));
+    localStorage.setItem('Allbooks', JSON.stringify(items));
   };
 
   useEffect(() => {

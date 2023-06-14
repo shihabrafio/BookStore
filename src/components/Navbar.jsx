@@ -30,20 +30,34 @@ export default Navbar;
 
 const Nav = styled.nav`
   display: flex;
-
-  .h1 {
+  background-color: aliceblue;
+  h1 {
+    margin-left: 2%;
   }
 
   ul {
     display: flex;
-    align-content: space-between;
     list-style: none;
     width: 22%;
-    justify-content: space-evenly;
-  }
+    justify-content: flex-start;
+    margin-left: 2%;
 
-  .link {
-    text-decoration: none;
-    text-align: center;
-  }
+    li {
+      padding-top: 1%;
+      padding-left: 15%;
+
+      .link {
+        text-decoration: none;
+        font-size: 20px;
+        color: #367bb8;
+      }}}
+  .profile {
+    margin-left: 57%;
+    margin-top: 1%;
+    
+    .icon {
+        width: auto;
+        height: 2.313rem;
+        color: #0090ff;
+  }}
 `;
