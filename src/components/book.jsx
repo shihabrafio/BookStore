@@ -2,13 +2,18 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { deleteBooks, getBooks } from '../redux/books/books';
 import Button from './Button';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
-  const remove = () => {
-    dispatch(removeBook(book.item_id));
+  const remove = async () => {
+    try {
+      await dispatch(deleteBooks(book.id));
+      await dispatch(getBooks());
+    } catch (error) {
+      console.error(error);
+    }
   };
   return (
     <Listitems>
@@ -22,7 +27,7 @@ const Book = ({ book }) => {
           <Button className="comments">Comments</Button>
           <Button
             className="remove"
-            onClick={remove}
+            onClick={() => remove()}
           >
             Remove
           </Button>
@@ -31,10 +36,10 @@ const Book = ({ book }) => {
       </article>
       <article className="second">
         <div className="circle">
-          <CircularProgressbar value={80} />
+          <CircularProgressbar value={90} />
         </div>
         <div className="progress-text">
-          <p className="percentage">80%</p>
+          <p className="percentage">90%</p>
           <p className="completed">Completed</p>
         </div>
       </article>
