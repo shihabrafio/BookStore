@@ -73,7 +73,7 @@ const Div = styled.div`
     .title {
       height: 2.813rem;
       border-radius: 4px;
-      border: solid 1px #2e90f0;
+      border: solid 1px #e1e1e1;
       background-color: #fff;
       padding-left: 1rem;
       width: 55.15%;
@@ -81,7 +81,7 @@ const Div = styled.div`
     .author {
       height: 2.813rem;
       border-radius: 4px;
-      border: solid 1px #2e90f0;
+      border: solid 1px #e1e1e1;
       background-color: #fff;
       padding-left: 1rem;
       width: 23.67%;
