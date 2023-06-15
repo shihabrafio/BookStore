@@ -59,6 +59,14 @@ export default Book;
 const Listitems = styled.li`
   display: flex;
   justify-content: space-between;
+  border-radius: 4px;
+  border: solid 1px #e1e1e1;
+  background-color: var(--white-two);
+  margin-bottom: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  font-family: 'Roboto Slab', serif;
+  font:  url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
   .first {
     display: flex;
@@ -76,6 +84,7 @@ const Listitems = styled.li`
             line-height: normal;
             letter-spacing: normal;
             color: #121212;
+            margin-bottom: -3%;
         }
         .title {
             height: 1.813rem;
@@ -86,6 +95,7 @@ const Listitems = styled.li`
             line-height: normal;
             letter-spacing: -0.2px;
             color: #121212;
+            margin-bottom: 0%;
         }
         .author {
             height: 1.188rem;
@@ -114,6 +124,7 @@ const Listitems = styled.li`
             color: #4386bf;
             background-color: #fff;
             border: none;
+            padding-left: 0%;
         }
         .remove {
             height: 1.188rem;
@@ -124,7 +135,7 @@ const Listitems = styled.li`
             line-height: normal;
             letter-spacing: normal;
             color: #4386bf;
-            background-color: #fff;
+            background-color: #fafafa;
             border-right: 1px solid #e8e8e8;
             border-left: 1px solid #e8e8e8;
             border-top: none;
