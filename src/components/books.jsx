@@ -25,14 +25,14 @@ const Books = () => {
           <Spinner />
         </LoadingSpinner>
       ) : (
-        <div>
+        <Background>
           <ul>
             {Allbooks.map((book) => (
               <Book key={book.id} book={book} />
             ))}
           </ul>
           <AddBook />
-        </div>
+        </Background>
       )}
     </Section>
   );
@@ -64,4 +64,8 @@ const Spinner = styled.div`
       transform: rotate(360deg);
     }
   }
+`;
+
+const Background = styled.div`
+  background-color: #fafafa;
 `;
