@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import { addBook } from '../redux/books/books';
+import { Await } from 'react-router-dom';
+import { postBooks, getBooks } from '../redux/books/books';
+import Button from './Button';
 
 const Addbook = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
   const dispatch = useDispatch();
-  const add = (event) => {
+  const add = async (event) => {
     event.preventDefault();
     if (!title.trim() || !author.trim()) return;
-    dispatch(addBook([title, author]));
-    setTitle('');
-    setAuthor('');
+    try {
+      await dispatch(addBook([title, author]));
+      setTitle('');
+      setAuthor('');
+      await dispatch(getBooks());
+    } catch (error) { console.log(error); }
+    }
   };
 
   return (
@@ -22,7 +28,7 @@ const Addbook = () => {
       <form>
         <input type="text" className="title" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} value={title} />
         <input type="text" className="author" placeholder="Author" name="author" onChange={(e) => setAuthor(e.target.value)} value={author} />
-        <button type="submit" className="add-button" onClick={add}>Add Book</button>
+        <Button type="submit" className="add-button" onClick={add}>Add Book</Button>
       </form>
     </Div>
   );
