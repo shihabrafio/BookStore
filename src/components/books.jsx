@@ -7,15 +7,15 @@ import { getBooks } from '../redux/books/books';
 
 const Books = () => {
   const dispatch = useDispatch();
-  const { books, isLoading, error } = useSelector((store) => store.books);
+  const { books, isLoading } = useSelector((store) => store.books);
 
   useEffect(() => {
     dispatch(getBooks());
   }, [dispatch]);
 
-  const Allbooks = Object.entries(books).reduce((acc, [id, bookList]) => {
-    const booksWithId = bookList.map((book) => ({ ...book, id }));
-    return [...acc, ...booksWithId];
+  const Allbooks = Object.entries(books).reduce((bookarray, [id, listitem]) => {
+    const booksWithId = listitem.map((book) => ({ ...book, id }));
+    return [...bookarray, ...booksWithId];
   }, []);
 
   return (
