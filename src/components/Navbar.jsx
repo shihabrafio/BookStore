@@ -30,7 +30,6 @@ export default Navbar;
 
 const Nav = styled.nav`
   display: flex;
-  background-color: aliceblue;
   h1 {
     margin-left: 2%;
   }
