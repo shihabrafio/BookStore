@@ -9,10 +9,10 @@ const Book = ({ book }) => {
   const dispatch = useDispatch();
   const remove = async () => {
     try {
-      await dispatch(deleteBooks(book.item_id));
+      await dispatch(deleteBooks(book.id));
       await dispatch(getBooks());
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
   return (
@@ -27,7 +27,7 @@ const Book = ({ book }) => {
           <Button className="comments">Comments</Button>
           <Button
             className="remove"
-            onClick={remove}
+            onClick={() => remove()}
           >
             Remove
           </Button>
@@ -36,10 +36,10 @@ const Book = ({ book }) => {
       </article>
       <article className="second">
         <div className="circle">
-          <CircularProgressbar value={80} />
+          <CircularProgressbar value={90} />
         </div>
         <div className="progress-text">
-          <p className="percentage">80%</p>
+          <p className="percentage">90%</p>
           <p className="completed">Completed</p>
         </div>
       </article>
