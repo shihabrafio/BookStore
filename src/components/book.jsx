@@ -2,13 +2,18 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { deleteBooks, getBooks } from '../redux/books/books';
 import Button from './Button';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
-  const remove = () => {
-    dispatch(removeBook(book.item_id));
+  const remove = async () => {
+    try {
+      await dispatch(deleteBooks(book.item_id));
+      await dispatch(getBooks());
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <Listitems>
