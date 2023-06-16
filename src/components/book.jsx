@@ -233,6 +233,7 @@ const Listitems = styled.li`
         background-color: #2e90f0;
         color: #c3daf0;
         border-radius: 3px;
+        border: none;
     }
 }
 `;
