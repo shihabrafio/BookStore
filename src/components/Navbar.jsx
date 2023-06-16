@@ -30,29 +30,38 @@ export default Navbar;
 
 const Nav = styled.nav`
   display: flex;
+  background-color: white;
+
   h1 {
-    margin-left: 2%;
+    margin-left: 6%;
+    color: #0290ff;
+    width: 15%;
+    margin-top: 1.4%;
+    font-size: 1.875rem;
   }
 
   ul {
     display: flex;
     list-style: none;
-    width: 22%;
+    width: 13%;
     justify-content: flex-start;
-    margin-left: 2%;
+    margin-left: 0%;
+    padding-left: 0%;
 
     li {
-      padding-top: 1%;
+      padding-top: 9%;
       padding-left: 15%;
 
       .link {
         text-decoration: none;
-        font-size: 20px;
-        color: #367bb8;
+        font-size: 0.813 rem;
+        color: #121212;
+        letter-spacing: 1.9px;
+        
       }}}
   .profile {
     margin-left: 57%;
-    margin-top: 1%;
+margin-top: 1.5%;
     
     .icon {
         width: auto;
