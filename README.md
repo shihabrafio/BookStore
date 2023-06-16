@@ -1,6 +1,11 @@
 <a name="readme-top"></a>
 
 <div align="center">
+ <b> <i> <u> PREVIEW </u> </i></b> </br> </br>
+ <img src='./video.gif'>
+</div>
+
+<div align="center">
   <br/>
   <h3><b>Bookstore</b></h3>
 </div>
