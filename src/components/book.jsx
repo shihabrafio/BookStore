@@ -61,12 +61,15 @@ const Listitems = styled.li`
   justify-content: space-between;
   border-radius: 4px;
   border: solid 1px #e1e1e1;
-  background-color: var(--white-two);
+  background-color: white;
   margin-bottom: 2%;
   padding-left: 2%;
   padding-bottom: 2%;
+  padding-top: 1%;
   font-family: 'Roboto Slab', serif;
   font:  url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+  margin-right: 6%;
+  margin-left: 3%;
 
   .first {
     display: flex;
@@ -227,9 +230,9 @@ const Listitems = styled.li`
     .update-progress {
         margin: 0.75rem 0 0.563rem 0;
         padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-        border-radius: 3px;
         background-color: #2e90f0;
         color: #c3daf0;
+        border-radius: 3px;
     }
 }
 `;
