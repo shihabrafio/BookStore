@@ -23,7 +23,7 @@ const Addbook = () => {
 
   return (
     <Div>
-      <h1>Add Book</h1>
+      <h1>Add New Book</h1>
       <form>
         <input
           type="text"
@@ -53,7 +53,7 @@ export default Addbook;
 
 const Div = styled.div`
   border-top: 1px solid #e8e8e8;
-  margin: 2rem 2.25rem;
+  margin: 2rem 5.9rem;
 
   h1 {
     height: 1.5rem;
@@ -64,11 +64,12 @@ const Div = styled.div`
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.18px;
-    color: #4989d1;
+    color: #888888;
   }
   form {
     display: flex;
     justify-content: space-between;
+    width: 99%;
 
     .title {
       height: 2.813rem;
