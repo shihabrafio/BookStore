@@ -18,7 +18,7 @@ const Addbook = () => {
       setTitle('');
       setAuthor('');
       await dispatch(getBooks());
-    } catch (error) { console.log(error); }
+    } catch (error) { console.error(error); }
   };
 
   return (
