@@ -49,8 +49,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -93,7 +91,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
   cd my-folder
-  git clone git@github.com:deniodev/Bookstore.git
+  git clone https://github.com/shihabrafio/BookStore.git
 
 
 ### Install
